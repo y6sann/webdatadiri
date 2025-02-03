@@ -8,6 +8,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
+            .download {
+        background: var(--gray);
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+
+    .download-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .download h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+    }
+
+    .download p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+    }
+
+    .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        background: var(--primary);
+        color: var(--dark);
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .download-btn:hover {
+        transform: translateY(-3px);
+        background: var(--secondary);
+        box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    }
+
+    .download-icon {
+        font-size: 1.5rem;
+    }
         * {
             margin: 0;
             padding: 0;
@@ -282,6 +327,7 @@
             <li><a href="#about">Tentang</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Kontak</a></li>
+            <li><a href="#download">Download</a></li>
         </ul>
     </nav>
 
@@ -401,6 +447,17 @@
                 </div>
                 <button type="submit" class="btn">Kirim Pesan</button>
             </form>
+        </div>
+    </section>
+
+    <section id="download" class="section download">
+        <div class="download-content" data-aos="zoom-in">
+            <h2>Download Source Code</h2>
+            <p>Dapatkan source code website portfolio ini secara gratis!</p>
+            <a href="/downloads/webdatadiri.zip" download class="download-btn">
+            <span class="download-icon">⬇️</span>
+            Download Source Code
+            </a>
         </div>
     </section>
 
